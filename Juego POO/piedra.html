@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piedra, Papel, Tijeras, Lagarto, Spock</title>
+  <link rel="stylesheet" href="papel.css">
+</head>
+<body id="pagina-juego">
+  <div class="contenedor">
+    <div class="Titulo">
+      <h1>Piedra, Papel, Tijeras, Lagarto, Spock</h1>
+    </div>
+    <div class="contenedorjuego">
+      <div id="jugador" class="jugar">Jugador</div>
+      <div class="contenedor-vs">
+        <span id="vs">VS</span>
+      </div>
+      <div id="computadora" class="jugar">Computadora</div>
+    </div>
+    <div class="contenedor-opcion">
+      <button id="piedra" class="opciones">
+        <img src="img/piedra.png" alt="Piedra">
+      </button>
+      <button id="papel" class="opciones">
+        <img src="img/papel.png" alt="Papel">
+      </button>
+      <button id="tijera" class="opciones">
+        <img src="img/tijera.png" alt="Tijera">
+      </button>
+      <button id="lagarto" class="opciones">
+        <img src="img/lagarto.png" alt="Lagarto">
+      </button>
+      <button id="spock" class="opciones">
+        <img src="img/spock.png" alt="Spock">
+      </button>
+    </div>
+    <div id="resultado" class="mensaje">
+      <div class="contenedor-resultado">
+        <p id="mensaje-resultado"></p>
+        <button id="reiniciar">Reiniciar</button>
+      </div>
+    </div>
+    <button id="cerrar-sesion">Cerrar sesión</button>
+  </div>
+  <script src="tijera.js"></script>
+</body>
+</html>

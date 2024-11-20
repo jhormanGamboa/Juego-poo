@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicia Sesión</title>
+  <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+  <div class="contenedor">
+    <div class="seccion-ilustracion">
+      <div class="contenedor-imagenes">
+        <img src="img/piedra.png" alt="Piedra" class="imagen-ilustracion">
+        <img src="img/papel.png" alt="Papel" class="imagen-ilustracion">
+        <img src="img/tijera.png" alt="Tijera" class="imagen-ilustracion">
+      </div>
+    </div>
+    <div class="seccion-formulario">
+      <h1>Inicia sesión</h1>
+      <p>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
+      <form action="inicio">
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" placeholder="Ingresa tu correo electrónico" required>
+        </div>
+        <div class="campo">
+          <label for="contraseña">Contraseña</label>
+          <input type="password" id="contraseña" placeholder="Ingresa tu contraseña" required>
+        </div>
+        <button type="submit" class="boton-continuar">Continuar</button>
+      </form>
+    </div>
+  </div>
+  <script src="tijera.js"></script>
+</body>
+</html>

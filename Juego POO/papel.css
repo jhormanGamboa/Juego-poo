@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    color: #3d3d3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px 15px;
+    width: 85%;
+    max-width: 550px;
+}
+
+.Titulo {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    color: #444444;
+    margin-bottom: 15px;
+    letter-spacing: 0.04em;
+}
+
+.contenedorjuego {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.jugar {
+    width: 100px;
+    height: 100px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    color: #3d3d3d;
+    border: 3px solid #d4d4d4;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.jugar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.jugar.active {
+    animation: sacudir 0.8s ease-in-out infinite;
+}
+
+.contenedor-vs {
+    text-align: center;
+}
+
+#vs {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #b08968;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor.opcion {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.opciones {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.opciones img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #d4d4d4;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.opciones:hover img {
+    transform: scale(1.15);
+    border-color: #b08968;
+}
+
+@keyframes sacudir {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-6px);
+    }
+    50% {
+        transform: translateX(6px);
+    }
+    75% {
+        transform: translateX(-6px);
+    }
+}
+
+.mensaje {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.contenedor-resultado {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #3d3d3d;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-resultado button {
+    padding: 8px 16px;
+    background-color: #b08968;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.contenedor-resultado button:hover {
+    background-color: #8e6b4a;
+}
+
+#cerrar-sesion {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+#cerrar-sesion:hover {
+    background-color: #e65c50;
+    transform: scale(1.05);
+}
+
+#cerrar-sesion:active {
+    background-color: #cc4d42;
+    transform: scale(1);
+}
+

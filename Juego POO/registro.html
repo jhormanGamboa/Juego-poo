@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+  <div class="contenedor">
+    <div class="seccion-ilustracion">
+      <div class="contenedor-imagenes">
+        <img src="img/piedra.png" alt="Piedra" class="imagen-ilustracion">
+        <img src="img/papel.png" alt="Papel" class="imagen-ilustracion">
+        <img src="img/tijera.png" alt="Tijera" class="imagen-ilustracion">
+      </div>
+    </div>
+    <div class="seccion-formulario">
+      <h1>Regístrate</h1>
+      <form action="registro">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+        </div>
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" placeholder="Ingresa tu correo electrónico" required>
+        </div>
+        <div class="campo">
+          <label for="contraseña">Contraseña</label>
+          <input type="password" id="contraseña" placeholder="Ingresa tu contraseña" required>
+        </div>
+        <button type="submit" class="boton-continuar">Regístrate</button>
+      </form>
+    </div>
+  </div>
+  <script src="tijera.js"></script>
+</body>
+</html>
