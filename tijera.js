@@ -117,14 +117,14 @@ class verificar {
       const usuarioActual = JSON.parse(localStorage.getItem("usuarioActual"));
       if (!usuarioActual) {
         alert("Debes iniciar sesión para acceder al juego.");
-        window.location.href = "inicio.html";
+        window.location.href = "index.html";
       }
     }
   
     static cerrarSesion() {
       localStorage.removeItem("usuarioActual");
       alert("Sesión cerrada.");
-      window.location.href = "inicio.html";
+      window.location.href = "index.html";
     }
   }
   
@@ -138,7 +138,8 @@ class verificar {
         const password = document.getElementById("contraseña").value.trim();
   
         if (verificar.registrarUsuario(nombre, correo, password)) {
-          window.location.href = "inicio.html";
+          window.location.href = "index.html";
+          window.close();
         }
       });
     }
